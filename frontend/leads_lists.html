@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<head>
+    <title>DZ CRM</title>
+    <style>
+        .mijoz {
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+        margin-top: 10px;
+        background-color: #f6f6f6;
+        font-size: 21px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%px;
+    }
+        
+    </style>
+</head>
+<body>
+
+    <ul>
+        <h1> DZ CRM mijozlari </h1>
+        {% for lead in leads %}
+            <div class="mijoz">{{ lead }}</div>        
+        {% endfor %}
+
+    </ul>
+
+</body>
+</html>
